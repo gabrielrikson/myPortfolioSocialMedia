@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+html {
+    scroll-behavior: smooth; /* Suaviza o comportamento de rolagem */
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.navbar-bg{
+    background-color: #1d1c17;
+}
+
+header{
+    background-image: url('./images/background-img/');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    margin-bottom: 20px; /* Espaçamento inferior entre os cartões */
+}
+
+footer {
+    background: #f8f9fa; /* Cor de fundo do rodapé */
+}
+
+.about-section {
+    background-color: #f1e6b5; /* Cor de fundo da seção */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 40px 20px; /* Padding adicional */
+    position: relative;
+}
+
+.about-section h2 {
+    font-size: 2.5rem; /* Tamanho do título */
+    color: #942222; /* Cor do título */
+    margin-bottom: 20px; /* Espaçamento inferior do título */
+}
+
+.about-section p {
+    font-size: 1.2rem; /* Tamanho do texto */
+    color: #343a40; /* Cor do texto */
+    max-width: 800px; /* Largura máxima do texto */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+}
+
+.about-icons {
+    font-size: 2rem; /* Tamanho dos ícones */
+    color: #942222; /* Cor dos ícones */
+    margin: 20px 0; /* Margem acima e abaixo dos ícones */
+}
+
+.about-icons i {
+    margin: 0 15px; /* Espaçamento entre os ícones */
+    transition: transform 0.3s; /* Transição suave para o efeito hover */
+}
+
+.about-icons i:hover {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+#moreInfo {
+    transition: max-height 0.3s ease; /* Transição suave para o texto */
+}
+
+/* Estilo para o botão "Saiba Mais" */
+#moreInfoButton {
+    border-radius: 20px; /* Bordas arredondadas */
+}
+
+/* Aqui termina a estilização da section about */
+
+div#tks .modal-content-thankyou{
+    height: 100px;
+}
+
+.modal-content {
+    border-radius: 15px; /* Bordas arredondadas do modal */
+}
+
+.card {
+    border: none; /* Remove a borda do card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do card */
+}
+
+.profile .card-img-profile-top {
+    border-top-left-radius: 15px; /* Bordas arredondadas na parte superior */
+    border-top-right-radius: 15px; /* Bordas arredondadas na parte superior */
+    width: 100%; /* Faz a imagem ocupar 100% da largura do card */
+    height: 250px; /* Define uma altura fixa para a imagem */
+    object-fit: cover; /* Faz a imagem cobrir completamente a área, cortando o excesso */
+    object-position: top; /* Alinha a imagem ao topo da div */
+    background-color: #942222;
+    padding-top: 20px;
+}
+
+.profile img{
+    height: 10px;
+}
+
+.card-title {
+    color: #942222; /* Cor do título do card */
+    font-size: 1.8rem; /* Tamanho do título */
+}
+
+.card-text {
+    color: #343a40; /* Cor do texto no card */
+}
+
+.card-text ul {
+    list-style-type: disc; /* Tipo de marcador */
+    margin-left: 20px; /* Margem à esquerda */
+}
+
+/* Ajustes para a modal-header */
+.modal-header {
+    background-color: #f8f9fa; /* Cor de fundo do cabeçalho do modal */
+    border-bottom: none; /* Remove a borda inferior */
+}
+
+/* Ajustes para a modal-body */
+.modal-body {
+    background-color: #ffffff; /* Cor de fundo do corpo do modal */
+}
+
+
+/* Aqui termina o card que fala mais sobre quem sou eu */
+
+.bg-primary-custom{
+    background: rgb(89,1,1);
+background: linear-gradient(90deg, rgba(89,1,1,1) 0%, rgba(189,55,55,1) 51%, rgba(255,92,92,1) 100%);
+}
+
+.modal-backdrop.show {
+    opacity: 0.5; /* Escurecendo o fundo quando a janela modal está aberta */
+}
+
+.modal-dialog {
+    display: flex; /* Flexbox para centralização */
+    align-items: center; /* Centralizando verticalmente */
+    min-height: calc(100vh - 1rem); /* Ajustando a altura para garantir que fique no centro */
+    width: 500px; /* Largura padrão do modal */
+}
+
+/* Definindo altura fixa para o modal */
+.modal-body {
+    height: 90vh; /* Altura fixa do conteúdo do modal */
+    overflow-y: hidden; 
+}
+
+/* Media query para dispositivos com largura máxima de 768px (mobile) */
+@media screen and (max-width: 768px) {
+    .modal-dialog {
+        width: 90%; /* Modal ocupa 90% da largura em dispositivos móveis */
+        max-width: none; /* Remove o limite máximo de largura */
+        margin: 0 0 0 35px;
+    }
+    .modal-body {
+        height: 80vh; /* Altura fixa do conteúdo do modal */
+        overflow-y: hidden; 
+    }
+}
+
+.carousel-img {
+    width: 100%; /* Imagem ocupa 100% da largura */
+    height: 400px; /* Altura definida para manter a proporção, ajustável conforme necessário */
+    object-fit: cover; /* Faz a imagem cobrir o espaço disponível, cortando o excesso */
+}
+
+/* Estilo adicional para o carrossel */
+.carousel-item {
+    text-align: center; /* Centraliza as imagens dentro do carrossel */
+}
+
+/* Ajustes para o carrossel */
+.carousel-item img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner do carrossel */
+    height: auto; /* Mantém a altura automática para preservar a proporção */
+    object-fit: contain; /* Faz a imagem cobrir completamente o espaço disponível */
+}
+
+/* Estilos para imagens no corpo do modal */
+.modal-body img {
+    max-width: 100%; /* As imagens não excederão a largura do modal */
+    height: auto;/* As imagens não excederão a altura do modal */
+    object-fit: contain; /* Mantém a proporção da imagem dentro do modal */
+}
+
+.card img {
+    height: 30vh; /* Ajuste a altura conforme necessário */
+    object-fit: cover;
+}
+
+.title-card-body{
+    display: flex;
+    text-align: center;
+}
+
+.title-card-body h5{
+    width: 100%;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 18px;
+}
+.title-card-body h5:hover{
+    background-color: #f05b5b;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s; 
+}
+
+.projects-section {
+    background-color: #f8f9fa; /* Cor de fundo suave para a seção */
+    padding: 40px 0; /* Padding adicional para criar espaço */
+}
+
+.projects-section h2 {
+    font-size: 2.5rem; /* Aumentar o tamanho da fonte do título */
+    color: #942222; /* Cor que combina com o restante do site */
+    margin-bottom: 30px; /* Espaçamento inferior do título */
+}
+
+.card {
+    transition: transform 0.3s; /* Adiciona efeito de transição */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de hover para elevar o card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.projects-section .card-img-top {
+    height: 200px; /* Define uma altura padrão para as imagens */
+    object-fit: cover; /* Faz a imagem cobrir o espaço disponível */
+}
+
+.bg-image {
+    position: relative; /* Necessário para o posicionamento absoluto da máscara */
+}
+
+.mask {
+    position: absolute; /* A máscara deve cobrir toda a área do cartão */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex; /* Para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s; /* Transição suave */
+}
+
+.bg-image:hover .mask {
+    opacity: 1; /* Mostra a máscara ao passar o mouse */
+}
+
+#loadingModal .modal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#loadingModal .modal-content{
+    height: 200px;
+    width: 300px;
+}
+
+#thankYouModal .modal-dialog {
+    max-width: 300px; /* Define uma largura máxima para o modal */
+}
+
+
+#thankYouModal .modal-body {
+    height: 100px; /* Ajuste a altura conforme necessário */
+    display: flex; /* Permite usar flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
